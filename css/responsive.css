@@ -1,0 +1,269 @@
+
+
+/* For mobile and tabs common style */
+@media (max-width : 991.98px) {
+
+    /* Common Heading */
+    .common_heading h2 {
+        font-size: 25px;
+    }
+    .common_heading p {
+        margin-bottom: 30px;
+    }
+
+    /* navbar */
+    .btn-primary {
+        color: #000;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .btn-primary:hover {
+        color: #000;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .btn-check:focus + .btn-primary, .btn-primary:focus {
+        color: #000;
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none !important;
+    }
+    .btn-close:focus {
+        outline: 0;
+        box-shadow: none !important;
+    }
+    .offcanvas-body ul {
+        text-align: center;
+    }
+    .offcanvas-body ul li a{
+        color: #222222;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight:var(--regular);
+    }
+    .offcanvas-body ul li a:hover{
+        color:var(--color-primary-blue);
+    }
+    #navber {
+        padding: 10px 0;
+    }
+
+/* banner */
+#banner .overlay {
+	padding: 130px 0 0;
+}
+#banner .ban_info h1 {
+	font-size: 60px;
+}
+#banner .ban_info h1::after {
+	width: 80%;
+}
+#banner .ban_info p {
+	font-size: 16px;
+	padding: 15px 0;
+}
+.ban_info .ban_btn a {
+	font-size: 15px;
+	padding: 10px 15px;
+}
+.arrow_down a svg {
+	width: 20px;
+	height: 20px;
+}
+.arrow_down {
+    
+    bottom: 0;
+    animation: bannerarrow 3s ease-in-out infinite;
+}
+
+@keyframes bannerarrow {
+    0%{
+        transform: translate(-10px,-70px); opacity:0 ;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-10px,-10px); opacity:0 ;
+    }
+    
+}
+#banner .ban_btn {
+	margin-bottom: 100px;
+}
+
+/* Typo */
+#typo {
+	padding: 30px 0;
+}
+#typo .typo_info p {
+	font-size: 15px;
+	padding: 15px;
+}
+
+/* Service */
+#service {
+	padding: 30px 0;
+}
+#service .item .logo .icon {
+	width: 40px;
+	height: 40px;
+}
+#service .item .logo .icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	background: var(--color-primary-blue);
+	/* display: inline-block; */
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+#service .item .logo .icon img {
+	max-width: 50%;
+}
+#service .item .info h3 {
+	font-size: 16px;
+	padding: 10px 0 5px;
+}
+.next-arrow {
+	right: 15px;
+}
+.prev-arrow{
+    left: 15px;
+}
+#service .item .info p {
+	padding: 0px 60px;
+}
+
+
+/* Showcase */
+#showcase {
+	padding: 30px 0;
+}
+
+/* Contact */
+#contact .overlay {
+	padding: 30px 0;
+}
+#contact .contact_info input {
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+}
+#contact .contact_info textarea {
+	width: 100%;
+	height: 160px;
+	padding: 10px;
+}
+#contact .contact_info form input::placeholder {
+	font-size: 13px;
+}
+#contact .contact_info form textarea::placeholder {
+	font-size: 13px;
+}
+#contact .contact_info button {
+	font-size: 15px;
+	padding: 7px 30px;
+}
+
+
+/* Copyright */
+#copyright .copyright_info .text span {
+	font-size: 13px;
+}
+#copyright .copyright_info .social_link .icon {
+	width: 30px;
+	height: 30px;
+}
+#copyright {
+	padding: 10px 0;
+}
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+/* banner */
+#banner .ban_info h1::after {
+	width: 50%;
+}
+#service .item .info p {
+	padding: 0px 115px;
+}
+#service .item .info h3 {
+	font-size: 18px;
+}
+#contact .contact_info input {
+	width: 100%;
+	height: 50px;
+	padding: 15px;
+}
+#contact .contact_info textarea {
+	width: 100%;
+	height: 160px;
+	padding: 15px;
+}
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    #banner .overlay {
+        padding: 130px 0 70px;
+    }
+
+    #banner .ban_info h1::after {
+        width: 50%;
+    }
+    #typo {
+        padding: 60px 0;
+    }
+    #typo .typo_info p {
+        padding: 15px 40px;
+    }
+    #service {
+        padding: 60px 0;
+    }
+    #service .item .info h3 {
+        font-size: 18px;
+    }
+    #service .item .info p {
+        padding: 0px 180px;
+    }
+    #showcase {
+        padding: 60px 0;
+    }
+    #contact .contact_info input {
+        width: 560px;
+        height: 50px;
+    }
+    #contact .contact_info textarea {
+        width: 560px;
+        height: 160px;
+    }
+    
+}
+
+
+@media (min-width: 992px){ 
+
+    
+    #contact .contact_info input {
+        width: 560px;
+        height: 60px;
+    }
+    #contact .contact_info textarea {
+        width: 560px;
+        height: 160px;
+    }
+    
+}
